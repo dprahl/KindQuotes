@@ -17,6 +17,8 @@ public class Quote {
     @Column(name="MESSAGE")
     private String message;
 
+    public Quote(){}
+
     public Quote(String msg){
         this.message = msg;
     }
