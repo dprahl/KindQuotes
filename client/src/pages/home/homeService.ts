@@ -13,4 +13,11 @@ export class HomeService{
         return this._http.get("http://localhost:8080/quotes/")
             .map(response => response.json());
     }
+
+    getQuote(quoteId : number) : Observable<any> {
+      return this._http.get("http://localhost:8080/quotes/" + quoteId)
+            .map(response => response.json());
+    }
+
+
 }

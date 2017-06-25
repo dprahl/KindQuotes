@@ -11,11 +11,15 @@ import {Http} from '@angular/http';
 export class HomePage {
 
   quotes: any;
-   
+  quote1: any;
+
   constructor(public navCtrl: NavController, public homeService:HomeService) {
     homeService.getAllQuotes().subscribe(data =>{
       this.quotes = data;
     })
+    // homeService.getQuote(1).subscribe(data =>{
+    //   this.quote1 = data;
+    // })
   }
 
 }

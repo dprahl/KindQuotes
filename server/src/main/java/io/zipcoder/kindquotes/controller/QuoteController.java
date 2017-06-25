@@ -63,6 +63,7 @@ public class QuoteController {
 
 
     /*
+    // POST method using ServletUriComponentsBuilder //
     @RequestMapping(value="/", method = RequestMethod.POST)
     public ResponseEntity<?> createQuote(@RequestBody Quote quote){
         quote = quoteRepository.save(quote);
